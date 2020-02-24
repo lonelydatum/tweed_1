@@ -1,0 +1,37 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame4 {
+	opacity: 1;
+}
+
+#cta{
+	width: 50px;	
+	height: 33px;
+	background-color: red;
+
+	@include pos(20, 560);
+}
+
+#cta:hover ~ .pop{
+	opacity: 1;
+}
+
+.pop{
+	opacity: .2;
+	@include pos(0, 0);
+	width: 300px;
+	height:600px;
+	background-color: #878962;
+}
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 300px;
+	height: 600px;
+}
+
