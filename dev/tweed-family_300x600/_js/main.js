@@ -10,7 +10,9 @@ function start(){
 
 	tl.set(".frame2", {opacity:1})
 	tl.from('.t2', .3, {opacity:0})
-	tl.from('.product_1', .3, {opacity:0}, "+=.3")
+	tl.add('smoke')
+	// tl.from('.smoke', .3, {opacity:0, scale:1.2}, 'smoke+=.4')
+	tl.from('.product_1', .3, {opacity:0}, "smoke")
 	tl.to('.frame2', .3, {opacity:0}, "+=2")
 
 	tl.set(".frame3", {opacity:1})

@@ -164,7 +164,7 @@ sup {
 #legalContent {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #878962;
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
@@ -175,7 +175,6 @@ sup {
   position: absolute;
   color: white;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
   font-size: 10px;
   z-index: 90;
   opacity: 0;
