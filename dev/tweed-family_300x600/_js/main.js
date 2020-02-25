@@ -5,7 +5,7 @@ function start(){
 	tl.set(".frame1", {opacity:1})
 	
 	tl.from('.t1', .3, {opacity:0})
-	tl.to('.t1', .3, {opacity:0}, "+=2")
+	tl.to('.t1', .3, {opacity:0}, "+=2.3")
 
 
 	tl.set(".frame2", {opacity:1})
