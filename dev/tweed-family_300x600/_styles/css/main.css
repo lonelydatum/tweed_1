@@ -227,9 +227,20 @@ sup {
 
 .logo_text {
   width: 114px;
-  -webkit-transform: translate(94px, 431px);
-  -ms-transform: translate(94px, 431px);
-  transform: translate(94px, 431px);
+  -webkit-transform: translate(94px, 440px);
+  -ms-transform: translate(94px, 440px);
+  transform: translate(94px, 440px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.product_2 {
+  -webkit-transform: translate(0px, -5px) scale(1, 1);
+  -ms-transform: translate(0px, -5px) scale(1, 1);
+  transform: translate(0px, -5px) scale(1, 1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
