@@ -1,0 +1,25 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+.frame4{
+	// opacity: 1;
+}
+
+
+#legalBtn{	
+	@include pos(20, 560);
+}
+
+
+
+.product_2{	
+	@include pos-scale(0, -5, 1);
+}
+
+
+#banner{
+	width: 160px;
+	height: 600px;
+}
+
