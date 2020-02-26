@@ -1,0 +1,22 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+.frame4{
+	// opacity: 1;
+}
+
+
+#legalBtn{	
+	@include pos(20, 560);
+}
+
+
+
+
+
+#banner{
+	width: 750px;
+	height: 264px;
+}
+
