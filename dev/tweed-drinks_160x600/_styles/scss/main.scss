@@ -1,0 +1,31 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame2 {
+	// opacity: 1;
+}
+
+.can{
+	// transform-origin: 160px 130px;
+	// @include pos-scale-rotate(-40, -65, .5, 20);
+}
+
+.cup_line{
+	opacity: .1;
+	@include pos-scale(0, 40, .5);
+}
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 160px;
+	height: 600px;
+}
+
+#legalBtn{	
+	@include pos(51, 500);
+	// opacity: 1;
+}
