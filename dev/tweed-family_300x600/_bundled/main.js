@@ -1,10 +1,10 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
+"use strict";
 
 function start() {
 	var tl = new TimelineMax();
 	tl.set(".frame1", { opacity: 1 });
-
+	tl.set(".legal_2", { opacity: 0 });
 	tl.from('.t1', .3, { opacity: 0 });
 	tl.to('.t1', .3, { opacity: 0 }, "+=2.3");
 
@@ -16,6 +16,8 @@ function start() {
 	tl.to('.frame2', .3, { opacity: 0 }, "+=2");
 
 	tl.set(".frame3", { opacity: 1 });
+	tl.set(".legal", { opacity: 0 });
+	tl.set(".legal_2", { opacity: 1 });
 	tl.from('.t3', .3, { opacity: 0 });
 	tl.from('.product_2', .3, { opacity: 0 }, "+=.3");
 	tl.to('.frame3', .3, { opacity: 0 }, "+=2");
@@ -23,6 +25,11 @@ function start() {
 	tl.set(".frame4", { opacity: 1 });
 	tl.from('.t4', .3, { opacity: 0 });
 	tl.from('.product_3', .3, { opacity: 0 }, "+=.3");
+	tl.to('.frame4', .3, { opacity: 0 }, "+=2");
+
+	tl.set(".frame5", { opacity: 1 });
+	tl.from('.t5', .3, { opacity: 0 });
+	tl.from('.product_4', .3, { opacity: 0 }, "+=.3");
 
 	// tl.set(".frame3", {opacity:1})
 	// tl.from('.logo_text', .3, {opacity:0})
