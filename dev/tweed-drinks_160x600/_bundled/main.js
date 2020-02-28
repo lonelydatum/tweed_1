@@ -13,9 +13,10 @@ var tl = new TimelineMax({ repeat: 2, repeatDelay: 1.6 });
 function pour() {
 
 	var tl_pour = new TimelineMax();
-	tl_pour.set('.liquid ', { visibility: 'visible' });
-	tl_pour.to('.liquid_1', .06, { opacity: .2, repeat: 633, yoyo: true, repeatDelay: .2 }, 0);
-	tl_pour.to('.liquid_0', .08, { opacity: .8, repeat: 633, yoyo: true, repeatDelay: .5 }, 0);
+	// tl_pour.set('.liquid ',  {visibility:'visible'})
+	TweenMax.to('.liquid_1', .06, { opacity: .2, repeat: 120, yoyo: true, repeatDelay: .2 });
+	TweenMax.to('.liquid_0', .08, { opacity: .8, repeat: 120, yoyo: true, repeatDelay: .5 });
+	// TweenMax.to('.liquid_1', .08, {opacity:.8, repeat:1633,  yoyo:true, repeatDelay:.2})
 }
 
 exports.size = size;
@@ -28,6 +29,7 @@ exports.pour = pour;
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
 function start() {
+	(0, _commonJsCommonJs.pour)();
 	var tl_cup = new TimelineMax();
 	tl_cup.to('.cup_line', 2.3, { y: -50, opacity: .6 });
 	tl_cup.to('.cup_line', .3, { opacity: 0 });
@@ -38,10 +40,10 @@ function start() {
 	_commonJsCommonJs.tl.to('.t1', .3, { opacity: 0 }, "+=3");
 
 	_commonJsCommonJs.tl.to(".frame2", .3, { opacity: 1 });
-	_commonJsCommonJs.tl.call(_commonJsCommonJs.pour);
+	_commonJsCommonJs.tl.set('.liquid ', { visibility: 'visible' });
 	_commonJsCommonJs.tl.add(tl_cup);
-
 	_commonJsCommonJs.tl.set('.liquid ', { visibility: 'hidden' });
+
 	_commonJsCommonJs.tl.to('.can', .5, { x: "+=60" });
 	_commonJsCommonJs.tl.from('.can_whole', .3, { x: "-=80" });
 }
