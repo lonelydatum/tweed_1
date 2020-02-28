@@ -1,4 +1,6 @@
-TweenLite.defaultEase = Power3.easeInOut
+import {tl, pour} from '../../_common/js/common.js'
+
+
 
 function start(){
 	const tl_cup = new TimelineMax()
@@ -6,7 +8,7 @@ function start(){
 	tl_cup.to('.cup_line', .3, {opacity:0})
 
 
-	const tl = new TimelineMax()
+	
 	tl.set(".frame1", {opacity:1})
 	
 	
@@ -15,27 +17,17 @@ function start(){
 	tl.to('.t1', .3, {opacity:0}, "+=3")
 
 	tl.to(".frame2", .3, {opacity:1})
-
+	tl.call(pour)
 	tl.add(tl_cup)
-	tl.to('.liquid ', .3, {opacity:0})
+
+	tl.set('.liquid ',  {visibility:'hidden'})
 	tl.to('.can', .5, {x:"+=140"})
 	tl.from('.can_whole', .3, {x:"-=140"})
 
 }
 
 
-TweenMax.to('.liquid_1', .06, {opacity:.2, repeat:33,  yoyo:true, repeatDelay:.2})
-TweenMax.to('.liquid_0', .08, {opacity:.8, repeat:33,  yoyo:true, repeatDelay:.5})
 
-
-
-// liquid.add('one')
-// liquid.set('.liquid_0', {opacity:1}, 'one')
-// liquid.set('.liquid_1', {opacity:0}, 'one')
-
-// liquid.add('two', "+=1")
-// liquid.set('.liquid_0', {opacity:0}, 'two')
-// liquid.set('.liquid_1', {opacity:1}, 'two')
 
 
 
