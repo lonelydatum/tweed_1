@@ -40,7 +40,7 @@ function start() {
 	// tl.to('.product', .3, {opacity:0}, "+=2")
 }
 
-// start()
+start();
 
 module.exports = {};
 
