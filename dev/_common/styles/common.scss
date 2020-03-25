@@ -121,15 +121,16 @@ sup{
 	color: white;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding: 10px;	
-	font-size: 13px;
+	font-size: 16px;
 	z-index: 90;
 	// opacity: 0;
 	font-weight: normal;
-	line-height: 22px;
+	line-height: 23px;
 	// transition: opacity .3s;
 	word-break: break-word;
 	pointer-events: none;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	visibility: hidden;
