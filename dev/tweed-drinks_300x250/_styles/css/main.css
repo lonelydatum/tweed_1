@@ -213,7 +213,7 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  opacity: .5;
+  opacity: 0;
   width: 36px;
   height: 25px;
   background-color: red;
@@ -224,6 +224,17 @@ sup {
   color: #333;
   width: 300px;
   height: 250px;
+}
+
+#legalBtn {
+  -webkit-transform: translate(25px, 210px);
+  -ms-transform: translate(25px, 210px);
+  transform: translate(25px, 210px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -20,3 +20,6 @@
 	height: 264px;
 }
 
+#legalBtn{	
+	@include pos(91, 234);
+}

@@ -20,3 +20,7 @@
 	height: 600px;
 }
 
+#legalBtn{	
+	@include pos(5, 505);
+	width: 148px;
+}

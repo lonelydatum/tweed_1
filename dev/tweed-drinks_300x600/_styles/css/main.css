@@ -213,7 +213,7 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  opacity: .5;
+  opacity: 0;
   width: 36px;
   height: 25px;
   background-color: red;
@@ -238,9 +238,9 @@ sup {
 }
 
 #legalBtn {
-  -webkit-transform: translate(51px, 500px);
-  -ms-transform: translate(51px, 500px);
-  transform: translate(51px, 500px);
+  -webkit-transform: translate(22px, 560px);
+  -ms-transform: translate(22px, 560px);
+  transform: translate(22px, 560px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

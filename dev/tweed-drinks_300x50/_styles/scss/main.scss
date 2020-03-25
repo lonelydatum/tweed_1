@@ -17,3 +17,7 @@
 	height: 50px;
 }
 
+#legalBtn{	
+	@include pos(35, 42);
+	height: 11px;
+}
