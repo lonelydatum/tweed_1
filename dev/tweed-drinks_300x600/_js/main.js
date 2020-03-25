@@ -5,7 +5,7 @@ import {tl, pour} from '../../_common/js/common.js'
 function start(){
 	pour()
 	const tl_cup = new TimelineMax()
-	tl_cup.to('.cup_line', 2.8, {y:-20, opacity:.6})
+	tl_cup.to('.cup_line', 2.8, {y:0, opacity:1})
 	tl_cup.to('.cup_line', .3, {opacity:0})
 
 
@@ -24,8 +24,10 @@ function start(){
 	tl.set('.liquid ',  {visibility:'hidden'})
 
 
-	tl.to('.can', .5, {x:"+=140"})
-	tl.from('.can_whole', .3, {x:"-=140"})
+	tl.add('leave', "+=.2")
+	tl.to('.can', .65, {x:"+=3000"}, 'leave')
+	tl.to('.cup', .65, {x:"-=300"}, 'leave')
+	tl.from('.cup_can', .65, {x:"+=300"}, "leave+=.2")
 
 }
 

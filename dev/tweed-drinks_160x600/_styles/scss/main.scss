@@ -14,8 +14,8 @@
 }
 
 .cup_line{
-	opacity: .1;
-	@include pos-scale(0, 40, .5);
+	opacity: 0.5;
+	@include pos-scale(0, 76, .5);
 }
 
 #banner{

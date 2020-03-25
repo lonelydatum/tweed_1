@@ -1,8 +1,16 @@
 const banner = document.getElementById('banner')
 const size = {w:banner.offsetWidth, h:banner.offsetHeight}
 
+const legalButton = document.getElementById("legalBtn")
+
+if(legalButton){
+	legalButton.addEventListener("click", ()=>{
+		TweenLite.set("#legalContent", {visibility:'visible'})
+	})
+}
+
 TweenLite.defaultEase = Power2.easeInOut
-const tl = new TimelineMax({repeat:2, repeatDelay: 1.6})
+const tl = new TimelineMax({repeat:2, repeatDelay: 2})
 
 function pour(){
 

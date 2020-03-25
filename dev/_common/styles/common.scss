@@ -109,7 +109,7 @@ sup{
 
 
 #legalBtn:hover ~ #legalContent {
-	opacity: 1;
+	// opacity: 1;
 	
 }
 
@@ -120,14 +120,19 @@ sup{
 	@include pos(0, 0);
 	color: white;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	
-	font-size: 10px;
+	padding: 10px;	
+	font-size: 13px;
 	z-index: 90;
-	opacity: 0;
+	// opacity: 0;
 	font-weight: normal;
-	line-height: 14px;
-	transition: opacity .3s;
+	line-height: 22px;
+	// transition: opacity .3s;
+	word-break: break-word;
 	pointer-events: none;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	visibility: hidden;
 }
 
 .hide{
@@ -139,9 +144,9 @@ sup{
 
 #legalBtn{	
 	@include pos(0, 0);
-	opacity: 1;
+	opacity: .5;
 	width: 36px;
 	height: 25px;
 	background-color: red;
-	opacity: 0;
+	// opacity: 1;
 }
